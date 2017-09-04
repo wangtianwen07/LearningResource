@@ -16,5 +16,44 @@ Gulp 严格的插件指南确保插件如你期望的那样简洁高质得工作
 易于学习
 通过最少的 API，掌握 Gulp 毫不费力，构建工作尽在掌握：如同一系列流管道。
 
-1、安装node.js  检查node --version; npm --version
+Check for Node and npm
 
+Make sure that you've installed Node and npm before attempting to install gulp.
+
+node --version
+npm --version
+Install the gulp command
+
+npm install --global gulp-cli
+Create a package.json
+
+If you don't have a package.json, create one. If you need help, run an npm init which will walk you through giving it a name, version, description, etc.
+
+Install gulp in your devDependencies
+
+Run this command in your project directory:
+
+npm install --save-dev gulp
+Create a gulpfile
+
+In your project directory, create a file named gulpfile.js in your project root with these contents:
+
+var gulp = require('gulp');
+
+gulp.task('default', function() {
+  // place code for your default task here
+});
+Test it out
+
+Run the gulp command in your project directory:
+
+gulp
+To run multiple tasks, you can use gulp <task> <othertask>.
+
+Result
+
+Voila! The default task will run and do nothing.
+
+Using gulpfile ~/my-project/gulpfile.js
+[11:15:51] Starting 'default'...
+[11:15:51] Finished 'default' after 103 μs
