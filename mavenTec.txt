@@ -1,3 +1,6 @@
 http://maven.apache.org/
 1、mvn archetype:generate
 2、
+编译源码：compile my application sources:mvn compile --> target文件夹
+编译测试代码：compile my test sources and run my unit tests: mvn test -->target文件夹下出现test-classes文件夹及测试报告
+
