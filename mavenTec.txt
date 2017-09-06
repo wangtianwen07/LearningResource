@@ -4,3 +4,6 @@ http://maven.apache.org/
 编译源码：compile my application sources:mvn compile --> target文件夹
 编译测试代码并执行测试：compile my test sources and run my unit tests: mvn test -->target文件夹下出现test-classes文件夹及测试报告
 仅编译测试代码： mvn test-compile
+3、Making a JAR file：mvn package  会执行源码编译、测试代码编译、测试代码执行、生成测试报告、打包jar
+
+
