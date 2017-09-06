@@ -1,9 +1,11 @@
 http://maven.apache.org/
+
+http://maven.apache.org/guides/getting-started/index.html
 1、mvn archetype:generate
-2、
-编译源码：compile my application sources:mvn compile --> target文件夹
+2、编译源码：compile my application sources:mvn compile --> target文件夹
 编译测试代码并执行测试：compile my test sources and run my unit tests: mvn test -->target文件夹下出现test-classes文件夹及测试报告
 仅编译测试代码： mvn test-compile
 3、Making a JAR file：mvn package  会执行源码编译、测试代码编译、测试代码执行、生成测试报告、打包jar
-
-
+4、 安装到本地仓库install the artifact you've generated (the JAR file) in your local repository：mvn install
+5、You have walked through the process for setting up, building, testing, packaging, and installing a typical Maven project. 
+生成web站点 generate a web site for your project：mvn site  -->target文件夹下出现site文件夹
